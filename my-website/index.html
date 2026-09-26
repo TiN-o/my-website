@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/my-website/css/styles.css" />
+    <link rel="icon" href="/my-website/asserts/images/new logo.png" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header role="header" class="header-section">
+      <nav class="navigation">
+        <div class="logo">
+          <img
+            src="/my-website/asserts/images/new logo.png"
+            alt="portfolio logo"
+          />
+        </div>
+        <button class="toggleMenu">
+          <!-- icon goes here -->
+        </button>
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link active" id="navLink" href="#about">About</a>
+          </li>
+          <li><a class="nav-link" id="navLink" href="#skills">Skills</a></li>
+          <li>
+            <a class="nav-link" id="navLink" href="#projects">Projects</a>
+          </li>
+          <li><a class="nav-link" id="navLink" href="#contact">Contact</a></li>
+          <button class="toggle-dark-light">
+            <!-- content goes here -->
+          </button>
+        </ul>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main>
+      <!-- profile section -->
+      <section class="main-content about" id="about">
+        <img
+          class="profile-image"
+          src="/my-website/asserts/images/portfolio-profile.png"
+          alt="profile picture"
+        />
+        <div class="profile-description">
+          <div class="heading-description">
+            <h1>ayitey martin</h1>
+            <h3>electrical and electronics enginering student...</h3>
+          </div>
+          <div class="profile-buttons">
+            <a class="btn profile-btn" href="#">contact</a>
+            <a class="btn profile-btn" href="#">view resume</a>
+          </div>
+        </div>
+      </section>
+      <section class="main-content skills" id="skills">
+        <div class="description">
+          <h2 class="heading">skills</h2>
+          <h3 class="sub-heading">engineering the world...</h3>
+        </div>
+        <div class="skills-card">
+          <div class="card">
+            <div class="sub-card">
+              <figure class="skill-container">
+                <img
+                  class="skill-image"
+                  src="/my-website/asserts/images/industrial-automtion.png"
+                  alt="industrial automation image"
+                />
+                <figcaption>Relay Logic Simulation</figcaption>
+              </figure>
+            </div>
+            <div class="sub-card">
+              <figure class="skill-container">
+                <img
+                  class="skill-image"
+                  src="/my-website/asserts/images/data-analytics.png"
+                  alt="data analytics image"
+                />
+                <figcaption>Data Analytics</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="card">
+            <div class="sub-card">
+              <figure class="skill-container">
+                <img
+                  class="skill-image"
+                  src="/my-website/asserts/images/we-developement.png"
+                  alt="web developement"
+                />
+                <figcaption>Web Developement</figcaption>
+              </figure>
+            </div>
+            <div class="sub-card">
+              <figure class="skill-container">
+                <img
+                  class="skill-image"
+                  src="/my-website/asserts/images/plc-hmi.jpg"
+                  alt="PLC image"
+                />
+                <figcaption>PLC Programming and HMI Design</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-content projects" id="projects">
+        <div class="description">
+          <h2 class="heading">projects</h2>
+          <h3 class="sub-heading">
+            transforming the world through project building...
+          </h3>
+        </div>
+        <div class="projects-cards">
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="/my-website/asserts/images/plc-project.png"
+              alt="automatic tank filling"
+            />
+            <div class="image-content">
+              <p>
+                <span>Automatic water tank filling</span> in Step 7. A modernise
+                way of controlling the amount of water in a reservoir.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="/my-website/asserts/images/we-developement.png"
+              alt="website"
+            />
+            <div class="image-content">
+              <p>
+                <span>Modern fast food restaurant</span> created for a customer
+                located in the central part of the Republic.
+              </p>
+              <a href="#" class="btn profile-btn">view project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-content contact" id="contact">
+        <div class="description">
+          <h2 class="heading">contact</h2>
+          <h3 class="sub-heading">connecting with like-mindedness...</h3>
+        </div>
+        <div class="contacts-card">
+          <div class="contact-card user-input">
+            <h5>Get in touch</h5>
+            <form class="form" id="user-form">
+              <label for="user-name">Name</label>
+              <input type="text" id="user-name" placeholder="Kwame Gyanwaa" />
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="example@yahoo.com" />
+              <label for="subject">Subject</label>
+              <input type="text" placeholder="Project support" maxlength="30" />
+              <label for="message">Message</label>
+              <textarea name="message" id="message" maxlength="500">
+                Your message here...
+              </textarea>
+            </form>
+            <button class="send-btn" type="submit">Send</button>
+            <p><span>Messages are responded within 24hrs</span></p>
+          </div>
+          <div class="contact-card contact-info">
+            <h5>Contact information</h5>
+            <section>
+              <h3>Phone</h3>
+              <div class="contact-sub-card">
+                <p>+233 55 922 0768</p>
+                <p>+233 20 650 8173</p>
+              </div>
+            </section>
+            <section>
+              <h3>Email</h3>
+              <div class="contact-sub-card email">
+                <a href="mailto:ayiteydjan19@gmail.com"
+                  >ayiteydjan19@gmail.com</a
+                >
+                <a href="mailto:ayiteymartin27@gmail.com"
+                  >ayiteymatin27@gmail.com</a
+                >
+                <a href="mailto:support-ayitey@gmail.com"
+                  >support-ayitey@gmail.com</a
+                >
+              </div>
+            </section>
+            <section>
+              <h3>Location</h3>
+              <div class="contact-sub-card">
+                <p>Ghana</p>
+                <p>Accra, Kwashieman</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-card quick-links">
+          <h4>Quick links</h4>
+          <ul>
+            <li>
+            <a class="nav-link active" id="navLink" href="#about">About</a>
+          </li>
+          <li><a class="nav-link" id="navLink" href="#skills">Skills</a></li>
+          <li>
+            <a class="nav-link" id="navLink" href="#projects">Projects</a>
+          </li>
+          <li><a class="nav-link" id="navLink" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      <div class="footer-card footer-logo">
+        <img src="/my-website/asserts/images/new logo.png">
+        <p>&COPY;All rights reserved, 2026</p>
+      </div>
+      <div class="footer-card social-media">
+        <h4>Social media</h4>
+        <div class="icon-link">
+
+        </div>
+      </div>
+      </div>
+    </footer>
+    <!-- script.js -->
+    <script src="/my-website/js/script.js"></script>
+  </body>
+</html>
