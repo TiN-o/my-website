@@ -6,6 +6,13 @@
     --card-border-status: solid #fefefe69;
 }
 
+@font-face {
+    font-family: 'montserrat';
+    src: url(/my-website/asserts/fonts/Montserrat\,Outfit\,Poppins\,Roboto/) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,9 +20,10 @@
 }
 
 body {
+    font-family: montserrat;
+    font-weight: 400;
     width: 100%;
     height: 100vh;
-    font-family: 'poppins', sans-serif;
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
 }
@@ -27,13 +35,14 @@ body {
     height: 5rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: solid rgba(255, 255, 255, 0.194);
     box-shadow: 0 5px 10px rgba(154, 151, 151, 0.344);
     position: fixed;
     top: 0;
     z-index: 100;
     background-color: #000;
+    padding: 0 10px;
 }
 
 .logo img {
@@ -43,11 +52,14 @@ body {
 
 .toggleMenu {
     display: none;
+    background-color: none;
+    color: white;
+    border: none;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 40px;
 }
 
 .nav-links li {
@@ -94,6 +106,7 @@ main {
 .main-content {
     width: 100%;
     height: 100vh;
+    border: solid white;
 }
 
 .about {
@@ -108,6 +121,16 @@ main {
     height: 90%;
     border-radius: 40%;
     border: solid white;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
 }
 
 .profile-description {
@@ -117,11 +140,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: solid yellow;
 }
 
 .heading-description {
     width: 100%;
     height: 18%;
+    text-align: center;
+    /* border: solid red; */
 }
 
 .heading-description h1 {
@@ -135,11 +161,12 @@ main {
     display: flex;
     gap: 20px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    /* border: solid red; */
 }
 
 .btn {
-    width: 8rem;
+    width: 10rem;
     padding: 2px 4px;
     border: solid yellow;
     text-align: center;
@@ -154,7 +181,7 @@ main {
 
 /* skills section */
 .description {
-    width: 70%;
+    width: 90%;
     height: 15%;
     text-align: center;
 }
@@ -165,33 +192,25 @@ main {
     position: relative;
 }
 
-
 .sub-heading {
     color: yellow;
 }
 
 .skills-card {
-    width: 70%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     display: flex;
+    justify-content: left;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-}
-
-.card {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 3px;
-    align-items: center;
-    justify-content: center;
+    border: solid red;
 }
 
 .sub-card {
-    width: 100%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
     border: var(--card-border-status);
     border-radius: var(--card-border-radius);
     padding: 3px;
@@ -223,7 +242,7 @@ main {
 /* project section */
 .projects-cards,
 .contacts-card {
-    width: 70%;
+    width: 90%;
     height: 80%;
     display: flex;
     align-items: center;
@@ -321,7 +340,7 @@ main {
 }
 
 .send-btn {
-    width: 8rem;
+    width: 10rem;
     padding: 5px 4px;
     border-radius: 18px;
     outline: none;
@@ -383,6 +402,7 @@ footer {
     justify-content: space-between;
     /* border: solid white; */
 }
+
 .footer-card {
     width: 25%;
     height: 100%;
@@ -403,11 +423,23 @@ footer {
     height: 40%;
 }
 
+.icon-link ul li {
+    list-style-type: none;
+}
 
+.icon-link a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.icon-link a:hover {
+    color: blue;
+}
 
 @media(max-width: 768px) {
-    .nav-links {
-        /* display: none; */
+    .open-navigation {
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 20rem;
@@ -431,4 +463,164 @@ footer {
         width: 9rem;
         height: 2.5rem;
     }
+
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border: solid white;
+    }
+
+    .profile-image {
+        width: 50%;
+        height: 70%;
+    }
+
+    .profile-description {
+        width: 70%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        border: solid white;
+    }
+
+    .heading-description {
+        width: 100%;
+        height: 60%;
+        border: solid green;
+    }
+
+    .heading-description h1 {
+        font-size: 2rem;
+    }
+
+    .profile-buttons {
+        width: 100%;
+        height: 20%;
+        border: solid red;
+    }
+
+    /* skills section */
+
+    .skills {
+        border: solid white;
+    }
+.skills-card {
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    border: solid yellow;
+}
+
+.sub-card {
+    width: 50%;
+    height: 100%;
+}
+
+.skill-image {
+    height: 80%;
+}
+
+/* project section */
+
+.projects {
+    border: solid green;
+}
+.projects-cards,
+.contacts-card {
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+}
+
+.project-card {
+    width: 70%;
+    height: 50%;
+}
+
+.project-image {
+    width: 100%;
+    height: 65%;
+}
+
+.image-content {
+    gap: 2px;
+}
+
+
+/* contact section */
+.contact-card {
+    width: 70%;
+    height: 50%;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.user-input h5 {
+    font-size: 1.2rem;
+}
+
+.form {
+ 
+    width: 100%;
+    height: 80%;
+    gap: 0;
+    padding: 0;
+}
+
+
+.form input {
+    width: 100%;
+    padding: 4px;
+}
+
+.form textarea {
+    width: 100%;
+    height: 45%;
+}
+
+.form textarea:focus {
+    background-color: #efefef33;
+    border-color: #fefefee8;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 3px
+}
+
+.contact-info h5 {
+    font-size: 1.2rem;
+}
+
+.contact-info section {
+    width: 90%;
+    height: 30%;
+    padding: 2px;
+}
+
+.contact-sub-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
 }
