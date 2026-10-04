@@ -411,6 +411,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 3px;
     text-align: center;
 }
 
