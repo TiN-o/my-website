@@ -438,6 +438,8 @@ footer {
     color: blue;
 }
 
+/* responsiveness */
+
 @media(max-width: 768px) {
     .open-navigation {
         display: none;
