@@ -45,6 +45,12 @@ body {
     padding: 0 10px;
 }
 
+.ti {
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
 .logo img {
     width: 15rem;
     height: 3.5rem;
@@ -125,10 +131,13 @@ main {
 }
 
 @keyframes bounce {
-    0%, 100%{
+
+    0%,
+    100% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-5px);
     }
 }
@@ -199,21 +208,20 @@ main {
 .skills-card {
     width: 90%;
     height: 90%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 50%);
+    /* gap: 3px; */
     border: solid red;
 }
 
 .sub-card {
-    width: 45%;
-    height: 45%;
+    width: 100%;
+    /* height: 100%; */
     border: var(--card-border-status);
     border-radius: var(--card-border-radius);
     padding: 3px;
+    border: solid green;
 }
 
 .skill-container {
@@ -430,11 +438,10 @@ footer {
 
 .icon-link a {
     text-decoration: none;
-    color: white;
     transition: color 0.3s ease;
 }
 
-.icon-link a:hover {
+.icon-link .ti:hover {
     color: blue;
 }
 
@@ -511,119 +518,121 @@ footer {
     .skills {
         border: solid white;
     }
-.skills-card {
-    width: 70%;
-    height: 100%;
-    flex-direction: column;
-}
 
-.card {
-    width: 100%;
-    height: 50%;
-    flex-direction: row;
-    border: solid yellow;
-}
+    .skills-card {
+        width: 70%;
+        height: 100%;
+        flex-direction: column;
+    }
 
-.sub-card {
-    width: 50%;
-    height: 100%;
-}
+    .card {
+        width: 100%;
+        height: 50%;
+        flex-direction: row;
+        border: solid yellow;
+    }
 
-.skill-image {
-    height: 80%;
-}
+    .sub-card {
+        width: 50%;
+        height: 100%;
+    }
 
-/* project section */
+    .skill-image {
+        height: 80%;
+    }
 
-.projects {
-    border: solid green;
-}
-.projects-cards,
-.contacts-card {
-    width: 100%;
-    height: 80%;
-    flex-direction: column;
-}
+    /* project section */
 
-.project-card {
-    width: 70%;
-    height: 50%;
-}
+    .projects {
+        border: solid green;
+    }
 
-.project-image {
-    width: 100%;
-    height: 65%;
-}
+    .projects-cards,
+    .contacts-card {
+        width: 100%;
+        height: 80%;
+        flex-direction: column;
+    }
 
-.image-content {
-    gap: 2px;
-}
+    .project-card {
+        width: 70%;
+        height: 50%;
+    }
 
+    .project-image {
+        width: 100%;
+        height: 65%;
+    }
 
-/* contact section */
-.contact-card {
-    width: 70%;
-    height: 50%;
-}
-
-.user-input {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-}
-
-.user-input h5 {
-    font-size: 1.2rem;
-}
-
-.form {
- 
-    width: 100%;
-    height: 80%;
-    gap: 0;
-    padding: 0;
-}
+    .image-content {
+        gap: 2px;
+    }
 
 
-.form input {
-    width: 100%;
-    padding: 4px;
-}
+    /* contact section */
+    .contact-card {
+        width: 70%;
+        height: 50%;
+    }
 
-.form textarea {
-    width: 100%;
-    height: 45%;
-}
+    .user-input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
 
-.form textarea:focus {
-    background-color: #efefef33;
-    border-color: #fefefee8;
-}
+    .user-input h5 {
+        font-size: 1.2rem;
+    }
+
+    .form {
+
+        width: 100%;
+        height: 80%;
+        gap: 0;
+        padding: 0;
+    }
 
 
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 3px
-}
+    .form input {
+        width: 100%;
+        padding: 4px;
+    }
 
-.contact-info h5 {
-    font-size: 1.2rem;
-}
+    .form textarea {
+        width: 100%;
+        height: 45%;
+    }
 
-.contact-info section {
-    width: 90%;
-    height: 30%;
-    padding: 2px;
-}
+    .form textarea:focus {
+        background-color: #efefef33;
+        border-color: #fefefee8;
+    }
 
-.contact-sub-card {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 3px
+    }
+
+    .contact-info h5 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info section {
+        width: 90%;
+        height: 30%;
+        padding: 2px;
+    }
+
+    .contact-sub-card {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
 
 }
