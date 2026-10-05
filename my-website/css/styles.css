@@ -177,6 +177,8 @@ main {
 .heading-description h1 {
     text-transform: capitalize;
     font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 1.5px white;
 }
 
 .profile-buttons {
