@@ -56,7 +56,7 @@ body .light-mode {
 .fa {
     width: 24px;
     height: 24px;
-    color: white;
+    color: yellow;
 }
 
 .logo img {
@@ -466,9 +466,9 @@ footer {
     transition: color 0.3s ease;
 }
 
-.icon-link .ti:hover {
+/* .icon-link .ti:hover {
     color: blue;
-}
+} */
 
 /* responsiveness */
 
