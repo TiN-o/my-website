@@ -57,6 +57,7 @@ body .light-mode {
     width: 24px;
     height: 24px;
     color: yellow;
+    display: inline-block;
 }
 
 .logo img {
@@ -464,6 +465,7 @@ footer {
 .icon-link a {
     text-decoration: none;
     transition: color 0.3s ease;
+    color: var(--primary-nav-text-color);
 }
 
 .icon-link .ti:hover {
