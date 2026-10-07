@@ -7,12 +7,12 @@
     --card-border-status: solid #fefefe69;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'montserrat';
     src: url(/my-website/asserts/fonts/Montserrat\,Outfit\,Poppins\,Roboto/) format('truetype');
     font-weight: 100 900;
     font-style: normal;
-}
+} */
 
 * {
     box-sizing: border-box;
@@ -21,8 +21,9 @@
 }
 
 body {
-    font-family: montserrat;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-optical-sizing: auto;
     width: 100%;
     height: 100vh;
     background-color: var(--primary-background-color);
