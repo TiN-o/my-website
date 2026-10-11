@@ -50,13 +50,13 @@ previousButton.addEventListener('click', ()=>{
     showSkillDetail(currentValue);
 });
 
-// nextButton.addEventListener('click', ()=>{
-//     currentValue ++;
-//     if(currentValue > mySkillsArray.length -1){
-//         currentValue = 0;
-//     }
-//     showSkillDetail(currentValue);
-// });
+nextButton.addEventListener('click', ()=>{
+    currentValue ++;
+    if(currentValue > mySkillsArray.length -1){
+        currentValue = 0;
+    }
+    showSkillDetail(currentValue);
+});
 
 // adding the active class to  a navigation link
 navLink.forEach(link =>{
