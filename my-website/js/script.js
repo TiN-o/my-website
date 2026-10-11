@@ -1,23 +1,23 @@
 // skills array
 
-// const mySkillsArray = [
-//     {
-//         image: '/my-website/asserts/images/industrial-automtion.png',
-//         title: 'Relay Logic Simulation'
-//     },
-//     {
-//         image: '/my-website/asserts/images/data-analytics.png',
-//         title: 'Data Analytics'
-//     },
-//     {
-//         image: '/my-website/asserts/images/we-developement.png',
-//         title: 'Web Developement'
-//     },
-//     {
-//         image: '/my-website/asserts/images/plc-hmi.jpg',
-//         title: 'PLC programming and HMI Design'
-//     }
-// ];
+const mySkillsArray = [
+    {
+        image: '/my-website/asserts/images/industrial-automtion.png',
+        title: 'Relay Logic Simulation'
+    },
+    {
+        image: '/my-website/asserts/images/data-analytics.png',
+        title: 'Data Analytics'
+    },
+    {
+        image: '/my-website/asserts/images/we-developement.png',
+        title: 'Web Developement'
+    },
+    {
+        image: '/my-website/asserts/images/plc-hmi.jpg',
+        title: 'PLC programming and HMI Design'
+    }
+];
 
 const navLink = document.querySelectorAll('#navLink')
 const toggleMenu = document.querySelector('.toggleMenu')
