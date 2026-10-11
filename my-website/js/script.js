@@ -24,10 +24,10 @@ const toggleMenu = document.querySelector('.toggleMenu')
 const toggleDarkMode = document.querySelector('.toggle-dark-light')
 
 // skills slider
-// const skillImage = document.querySelector('.skill-image');
-// const skillTitle = document.querySelector('.skill-title');
-// const previousButton = document.querySelector('.previous-image');
-// const nextButton = document.querySelector('.next-image');
+const skillImage = document.querySelector('.skill-image');
+const skillTitle = document.querySelector('.skill-title');
+const previousButton = document.querySelector('.previous-image');
+const nextButton = document.querySelector('.next-image');
 const dateOfYear = document.querySelector('.date')
 
 // DOM loading
