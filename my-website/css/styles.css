@@ -710,7 +710,7 @@ footer {
 
 @media (max-width: 1024px) {
     .main-content {
-        /* border: solid red; */
+        border: solid red;
     }
 
     .heading {
