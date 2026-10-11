@@ -28,7 +28,7 @@ const toggleDarkMode = document.querySelector('.toggle-dark-light')
 // const skillTitle = document.querySelector('.skill-title');
 // const previousButton = document.querySelector('.previous-image');
 // const nextButton = document.querySelector('.next-image');
-// const dateOfYear = document.querySelector('.date')
+const dateOfYear = document.querySelector('.date')
 
 // DOM loading
 // let currentValue = 0;
