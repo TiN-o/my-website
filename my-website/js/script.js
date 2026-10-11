@@ -36,11 +36,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
     showSkillDetail(currentValue)
 });
 
-// function showSkillDetail(){
-//     const currentItem = mySkillsArray[currentValue];
-//     skillImage.src = currentItem.image;
-//     skillTitle.textContent = currentItem.title;
-// };
+function showSkillDetail(){
+    const currentItem = mySkillsArray[currentValue];
+    skillImage.src = currentItem.image;
+    skillTitle.textContent = currentItem.title;
+};
 
 // previousButton.addEventListener('click', ()=>{
 //     currentValue --;
