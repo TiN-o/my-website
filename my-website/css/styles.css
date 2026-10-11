@@ -291,10 +291,10 @@ main {
     cursor: pointer;
     color: blue;
 }
-/*
+
 .slider:active {
     text-indent: 1.5px;
-} */
+}
 
 .skills,
 .projects,
