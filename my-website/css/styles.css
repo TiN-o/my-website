@@ -285,13 +285,13 @@ main {
     transition: 0.2s ease-in-out;
 }
 
-/* .slider:hover {
+ .slider:hover {
     background-color: transparent;
     border: solid blue;
     cursor: pointer;
     color: blue;
 }
-
+/*
 .slider:active {
     text-indent: 1.5px;
 } */
