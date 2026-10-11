@@ -31,10 +31,10 @@ const nextButton = document.querySelector('.next-image');
 const dateOfYear = document.querySelector('.date')
 
 // DOM loading
-// let currentValue = 0;
-// window.addEventListener('DOMContentLoaded', ()=>{
-//     showSkillDetail(currentValue)
-// });
+let currentValue = 0;
+window.addEventListener('DOMContentLoaded', ()=>{
+    showSkillDetail(currentValue)
+});
 
 // function showSkillDetail(){
 //     const currentItem = mySkillsArray[currentValue];
