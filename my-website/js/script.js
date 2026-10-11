@@ -42,13 +42,13 @@ function showSkillDetail(){
     skillTitle.textContent = currentItem.title;
 };
 
-// previousButton.addEventListener('click', ()=>{
-//     currentValue --;
-//     if(currentValue < 0){
-//         currentValue = mySkillsArray.length - 1;
-//     }
-//     showSkillDetail(currentValue);
-// });
+previousButton.addEventListener('click', ()=>{
+    currentValue --;
+    if(currentValue < 0){
+        currentValue = mySkillsArray.length - 1;
+    }
+    showSkillDetail(currentValue);
+});
 
 // nextButton.addEventListener('click', ()=>{
 //     currentValue ++;
