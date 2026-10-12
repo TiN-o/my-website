@@ -428,6 +428,11 @@ main {
     color: var(--primary-nav-text-color);
 }
 
+.send-btn:hover {
+    cursor: pointer;
+    border: solid rgba(255, 255, 255, 0.751);
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
