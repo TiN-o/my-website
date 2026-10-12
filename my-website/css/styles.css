@@ -208,6 +208,10 @@ main {
     position: relative;
 }
 
+.profile-btn:hover {
+    border: solid rgba(255, 255, 255, 0.684);
+}
+
 /* skills section */
 .description {
     width: 90%;
