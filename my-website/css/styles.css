@@ -583,12 +583,13 @@ footer {
     }
 
     .nav-links::after {
-        content: '';
-        padding: 5px;
+        content: "\eb55";
+        width: 25px;
+        height: 25px;
         background-color: blue;
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
     }
 
     .open-navigation li {
