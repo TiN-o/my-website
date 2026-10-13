@@ -68,18 +68,18 @@ navLink.forEach(link =>{
     })
 })
 
-// open and close navigation menu
-toggleMenu.addEventListener('click', ()=>{
-    toggleMenu.classList.toggle('open-navigation')
-    // toggleMenu.classList.remove('ti-menu-deep')
-    // toggleMenu.classList.add('ti-x')
-})
+// // open and close navigation menu
+// toggleMenu.addEventListener('click', ()=>{
+//     toggleMenu.classList.toggle('open-navigation')
+//     // toggleMenu.classList.remove('ti-menu-deep')
+//     // toggleMenu.classList.add('ti-x')
+// })
 
-// dark and light mode toggling
-toggleDarkMode.addEventListener('click', ()=>{
-    console.log('clicked!')
-    document.body.classList.toggle('light-mode')
-})
+// // dark and light mode toggling
+// toggleDarkMode.addEventListener('click', ()=>{
+//     console.log('clicked!')
+//     document.body.classList.toggle('light-mode')
+// })
 
 // footer date 
 dateOfYear.innerHTML = new Date().getFullYear()
